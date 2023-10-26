@@ -6,7 +6,7 @@ using MLTrained_AutomobilePricePredictor;
 // Create single instance of sample data from first line of dataset for model input
 // The "F" stays after the numeric value
 // Make the user input equal the values inside the struct
-// 
+//
 
 
 MLModel2.ModelInput sampleData = new MLModel2.ModelInput()
@@ -23,7 +23,6 @@ MLModel2.ModelInput sampleData = new MLModel2.ModelInput()
 
 Console.WriteLine("Using model to make single prediction -- Comparing actual Price with predicted Price from sample data...\n\n");
 
-Console.WriteLine("Test");
 Console.WriteLine($"Price: {10888F}");
 Console.WriteLine($"Year: {2013F}");
 Console.WriteLine($"Mileage: {19606F}");
