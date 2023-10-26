@@ -1,0 +1,402 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "C:\\Users\\jerry\\source\\repos\\AutomobilePricePredictor\\usedCarData.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Price",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Year",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Mileage",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "City",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "State",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Vin",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Make",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Model",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.91034718364668066,
+        "RuntimeInSeconds": 348.55,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model"
+            ],
+            "InputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Year",
+              "Mileage"
+            ],
+            "InputColumnNames": [
+              "Year",
+              "Mileage"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model",
+              "Year",
+              "Mileage"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 312,
+            "MinimumExampleCountPerLeaf": 5,
+            "NumberOfTrees": 407,
+            "MaximumBinCountPerFeature": 1023,
+            "FeatureFraction": 0.985129821973756,
+            "LearningRate": 0.11586474231541929,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.90943283468860714,
+        "RuntimeInSeconds": 251.4,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model"
+            ],
+            "InputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Year",
+              "Mileage"
+            ],
+            "InputColumnNames": [
+              "Year",
+              "Mileage"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model",
+              "Year",
+              "Mileage"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 187,
+            "MinimumExampleCountPerLeaf": 5,
+            "NumberOfTrees": 485,
+            "MaximumBinCountPerFeature": 1023,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.13196440077629248,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.90874596842445876,
+        "RuntimeInSeconds": 273.846,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model"
+            ],
+            "InputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Year",
+              "Mileage"
+            ],
+            "InputColumnNames": [
+              "Year",
+              "Mileage"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model",
+              "Year",
+              "Mileage"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 175,
+            "MinimumExampleCountPerLeaf": 5,
+            "NumberOfTrees": 846,
+            "MaximumBinCountPerFeature": 1023,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.19440145786021773,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.90800670267228045,
+        "RuntimeInSeconds": 207.211,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model"
+            ],
+            "InputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Year",
+              "Mileage"
+            ],
+            "InputColumnNames": [
+              "Year",
+              "Mileage"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model",
+              "Year",
+              "Mileage"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 199,
+            "MinimumExampleCountPerLeaf": 4,
+            "NumberOfTrees": 277,
+            "MaximumBinCountPerFeature": 773,
+            "FeatureFraction": 0.96575046257356734,
+            "LearningRate": 0.08958061973366338,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeRegression",
+        "Score": 0.90695464770128886,
+        "RuntimeInSeconds": 221.468,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3",
+          "e0": {
+            "OutputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model"
+            ],
+            "InputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Year",
+              "Mileage"
+            ],
+            "InputColumnNames": [
+              "Year",
+              "Mileage"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "City",
+              "State",
+              "Make",
+              "Model",
+              "Year",
+              "Mileage"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "NumberOfLeaves": 359,
+            "MinimumExampleCountPerLeaf": 5,
+            "NumberOfTrees": 158,
+            "MaximumBinCountPerFeature": 1023,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.16216807046886067,
+            "LabelColumnName": "Price",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "ReplaceMissingValues",
+      "e2": "Concatenate",
+      "e3": "FastTreeRegression",
+      "e4": "FastForestRegression",
+      "e5": "LbfgsPoissonRegressionRegression",
+      "e6": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "C:\\Users\\jerry\\source\\repos\\AutomobilePricePredictor\\MLModel2.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 4,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Tuner": "eci-cfo",
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 5000,
+    "OptimizeMetric": "RSquared",
+    "LabelColumn": "Price",
+    "AvailableTrainers": [
+      "SDCA",
+      "LBFGS",
+      "LGBM",
+      "FASTTREE",
+      "FASTFOREST"
+    ],
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "TrainValidateSplitValidationOption",
+      "SplitRatio": 0.2
+    }
+  }
+}

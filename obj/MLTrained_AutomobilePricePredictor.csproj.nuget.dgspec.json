@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jerry\\source\\repos\\MLTrained_AutomobilePricePredictor\\MLTrained_AutomobilePricePredictor.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jerry\\source\\repos\\MLTrained_AutomobilePricePredictor\\MLTrained_AutomobilePricePredictor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jerry\\source\\repos\\MLTrained_AutomobilePricePredictor\\MLTrained_AutomobilePricePredictor.csproj",
+        "projectName": "MLTrained_AutomobilePricePredictor",
+        "projectPath": "C:\\Users\\jerry\\source\\repos\\MLTrained_AutomobilePricePredictor\\MLTrained_AutomobilePricePredictor.csproj",
+        "packagesPath": "C:\\Users\\jerry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jerry\\source\\repos\\MLTrained_AutomobilePricePredictor\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jerry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[3.0.0-preview.23266.6, )"
+            },
+            "Microsoft.ML.FastTree": {
+              "target": "Package",
+              "version": "[3.0.0-preview.23266.6, )"
+            },
+            "Plotly.NET": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

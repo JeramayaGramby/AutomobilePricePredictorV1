@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "dgSpecHash": "w4nbvrOt+qwWyqTThgjsGUNhI5Qp2qvnXjnEjgJ12AgDSIdYjunGJd1qoOSo3c+lRrfjQrc71gVNCTm57HRIZg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\jerry\\source\\repos\\MLTrained_AutomobilePricePredictor\\MLTrained_AutomobilePricePredictor.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.ML (>= 3.0.0-preview.23266.6)' for 'net6.0'.",
+      "libraryId": "Microsoft.ML",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Plotly.NET (>= 3.0.1)' for 'net6.0'.",
+      "libraryId": "Plotly.NET",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.ML.FastTree (>= 3.0.0-preview.23266.6)' for 'net6.0'.",
+      "libraryId": "Microsoft.ML.FastTree",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
