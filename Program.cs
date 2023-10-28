@@ -42,6 +42,7 @@ public class ModelConsumption
             Console.ReadKey();
             // Put something in here that constructs an object for Model.predict()
             // Log that to the console
+            //
 
         }
         
