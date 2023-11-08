@@ -18,7 +18,7 @@ This project features a command line tool that allows the user to predict the ma
 2. Open a terminal window and change the current directory to the project folder
 
 3. In the terminal window, run:
-	Ø dotnet Program.cs 
+	> dotnet Program.cs 
 	
 4. Enter the year, mileage, make, model, city and state for the vehicle.
 
